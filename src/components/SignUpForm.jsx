@@ -37,7 +37,7 @@ export default function Create() {
   }
 
   return (
-    <div className="w-ful flex flex-col justify-center items-center">
+    <div className="w-ful flex flex-col justify-center items-center bg-slate-400">
       <div className="md:max-w-4xl w-11/12 flex flex-col justify-between py-8">
         <form onSubmit={createContact} className="flex flex-col gap-4">
           <div className="flex flex-col gap-2">
@@ -81,7 +81,7 @@ export default function Create() {
             />
           </div>
           
-          <button type="submit" className="mt-5 bg-blue-500 hover:bg-blue-700 w-full text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Create</button>
+          <button type="submit" className="mt-5 bg-gray-500 hover:bg-gray-700 w-full text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Create</button>
           {message && <p className="bg-green-200 text-green-900 p-5 rounded-lg">{message}</p>}
           {error && <p className="bg-red-200 text-red-900 p-5 rounded-lg">{error}</p>}
         </form>

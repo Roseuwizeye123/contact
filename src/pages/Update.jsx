@@ -49,7 +49,7 @@ export default function Update() {
   }
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4  ">
       <div className="max-w-md mx-auto mt-10 bg-white rounded-lg shadow-md overflow-hidden">
         <div className="p-4">
           <h1 className="text-3xl font-semibold mb-4">{contact.fullName}</h1>
@@ -95,9 +95,9 @@ export default function Update() {
               />
             </div>
             
-            <button type="submit" className="mt-5 py-3 px-6 bg-blue-500 text-white rounded-lg text-base hover:bg-blue-600 transition duration-300">Update</button>
-            {message && <p className="bg-green-200 text-green-900 p-3 rounded-lg">{message}</p>}
-            {error && <p className="bg-red-200 text-red-900 p-3 rounded-lg">{error}</p>}
+            <button type="submit" className="mt-5 py-3 px-6 bg-pink-500 text-white rounded-lg text-base hover:bg-blue-600 transition duration-300">Update</button>
+            {message && <p className="bg-blue-200 text-blue-900 p-3 rounded-lg">{message}</p>}
+            {error && <p className="bg-grey-200 text-grey-900 p-3 rounded-lg">{error}</p>}
           </form>
         </div>
       </div>

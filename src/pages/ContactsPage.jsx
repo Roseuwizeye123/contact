@@ -21,18 +21,18 @@ const ContactsPage = () => {
     };
 
     return (
-        <div className='flex flex-col items-center'>
-            <button className='bg-blue-800 text-white font-bold py-1 px-2 mt-4 mb-4'>
+        <div className='flex flex-col items-center bg-slate-500 w-full h-100'>
+            <button className='bg-green-800 text-white font-bold py-1 px-2 mt-4 mb-4'>
                 <Link to="/sign">Add New</Link>
             </button>
             {contacts.length > 0 ? (
-                <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-4 w-full h-full'>
                     {contacts.map((contact, index) => (
                         <div key={index} className='border border-gray-300 rounded-lg p-4'>
                             <h2 className='text-xl font-bold'>{contact.fullName}</h2>
                             
                             <div className='flex justify-between'>
-                            <Link to={`/details/${contact._id}`} className='bg-blue-400 text-white font-bold py-1 px-2 mt-2 rounded-lg'>
+                            <Link to={`/details/${contact._id}`} className='bg-yellow-400 text-black font-bold flex  py-1 px-2 mt-2 rounded-lg'>
     View
 </Link>
 
@@ -42,7 +42,7 @@ const ContactsPage = () => {
                     ))}
                 </div>
             ) : (
-                <p>No contacts found!</p>
+                <p> All Contact list</p>
             )}
         </div>
     );

@@ -43,16 +43,16 @@ const Details = () => {
   
 
   return (
-    <div className="container mx-auto px-4">
-      <div className="max-w-md mx-auto mt-10 bg-white rounded-lg shadow-md overflow-hidden">
+    <div className="container mx-auto px-4  ">
+      <div className="max-w-md mx-auto mt-10 bg-green-200 rounded-lg shadow-md overflow-hidden ">
         <div className="p-4">
           {message && <p className="bg-green-200 text-green-900 p-3 rounded-lg">{message}</p>}
           {error && <p className="bg-red-200 text-red-900 p-3 rounded-lg">{error}</p>}
           <div className="flex items-center justify-between">
             <h1 className="text-3xl font-semibold mb-3">{contact.fullName}</h1>
-            <div className="flex gap-4">
-              <button onClick={() => navigate(`/update/${contact._id}`)} className="py-3 px-6 bg-blue-500 text-white rounded-lg text-base hover:bg-blue-600 transition duration-300">Update</button>
-              <button onClick={deleteContact} className="py-3 px-6 bg-red-500 text-white rounded-lg text-base hover:bg-red-600 transition duration-300">Delete</button>
+            <div className="flex gap-4 pb-11 mt-70">
+              <button onClick={() => navigate(`/update/${contact._id}`)} className="py-3 px-6 bg-green-500 text-white rounded-lg text-base hover:bg-yellow-600 transition duration-300">Update</button>
+              <button onClick={deleteContact} className="py-3 px-6 bg-purple-500 text-white rounded-lg text-base hover:bg-orange-600 transition duration-300">Delete</button>
             </div>
           </div>
           <div className="mt-4">
