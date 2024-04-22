@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 const ContactsPage = () => {
     const [contacts, setContacts] = useState([]);
 
@@ -22,6 +23,7 @@ const ContactsPage = () => {
 
     return (
         <div className='flex flex-col items-center bg-slate-500 w-full h-100'>
+            <Navbar />
             <button className='bg-green-800 text-white font-bold py-1 px-2 mt-4 mb-4'>
                 <Link to="/sign">Add New</Link>
             </button>
@@ -44,6 +46,7 @@ const ContactsPage = () => {
             ) : (
                 <p> All Contact list</p>
             )}
+            <Footer />
         </div>
     );
 };
